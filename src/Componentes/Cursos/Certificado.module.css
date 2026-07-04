@@ -84,3 +84,56 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .certificadoTexto {
+    display: none;
+  }
+  .certificadoContainer {
+    gap: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .sobreCurso {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cursoContainer {
+    display: none;
+  }
+  .certificadoContainer {
+    margin-top: 20px;
+    grid-row: 1;
+  }
+  .botaoInicio {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    align-content: center;
+  }
+  .sobreContainer {
+    display: none;
+  }
+  .certificadoContainer {
+    margin-top: 20px;
+  }
+  .botaoInicio {
+    margin-top: 10px;
+  }
+  .certificado {
+    height: 155px;
+    transition: 0.3s;
+    grid-column: 2;
+    margin-right: 15px;
+  }
+  .certificado:hover {
+    height: 155px;
+    box-shadow: 0 0 5px 5px currentColor;
+  }
+}

@@ -11,10 +11,18 @@ const Header = () => {
   return (
     <section className={styles.container}>
       <nav>
-        <a onClick={() => scrollTo("inicio")}>Inicio</a>
-        <a onClick={() => scrollTo("sobre")}>Sobre</a>
-        <a onClick={() => scrollTo("cursos")}>Habilidades</a>
-        <a onClick={() => scrollTo("projetos")}>Projetos</a>
+        <a className={styles.headerBotoes} onClick={() => scrollTo("inicio")}>
+          Inicio
+        </a>
+        <a className={styles.headerBotoes} onClick={() => scrollTo("sobre")}>
+          Sobre
+        </a>
+        <a className={styles.headerBotoes} onClick={() => scrollTo("cursos")}>
+          Habilidades
+        </a>
+        <a className={styles.headerBotoes} onClick={() => scrollTo("projetos")}>
+          Projetos
+        </a>
         <a className={styles.contato} onClick={() => scrollTo("contato")}>
           Contato
         </a>
