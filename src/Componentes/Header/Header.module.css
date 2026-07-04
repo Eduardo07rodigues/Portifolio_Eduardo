@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px 60px 15px 60px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background: #2c2c2c;
+  width: fit-content;
+  gap: 40px;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #acacac;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+}
+
+.contato {
+  background: linear-gradient(#da0808, #be0606);
+  padding: 6px 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.contato:hover {
+  background: linear-gradient(#b40606, #990404);
+}
+
+@media (max-width: 750px) {
+  nav {
+    margin: 10px 0px 15px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  a {
+    display: none;
+  }
+
+  .contato {
+    display: flex;
+  }
+  nav {
+    gap: 0;
+    background: none;
+    padding: 0;
+    margin: 25px 0px 0 30px;
+  }
+  .container {
+    justify-items: start;
+  }
+  .contato {
+    background: linear-gradient(#da0808, #be0606);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+}

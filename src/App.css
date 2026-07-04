@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=New+Amsterdam&display=swap");
+
+html {
+  height: 100%;
+}
+
+section {
+  margin: 0;
+}
+
+.section {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+  width: 100%;
+  height: 100%;
+}
+
+.tituloSecao {
+  color: white;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(#c50f0f 60%, #9e0606 60%);
+  /* border-radius: 5px; */
+  text-align: center;
+  padding: 5px 20px;
+  width: max-content;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 360px) {
+  .tituloSecao {
+    color: white;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(#c50f0f 60%, #9e0606 60%);
+    /* border-radius: 5px; */
+    text-align: center;
+    padding: 5px 15px;
+    width: max-content;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+  }
+}

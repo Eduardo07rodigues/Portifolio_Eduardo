@@ -1,0 +1,77 @@
+.containerSobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* align-items: center; */
+  justify-items: center;
+  margin-top: 50px;
+  margin: 0;
+  margin-top: 40px;
+  padding: 40px 0;
+  width: 100%;
+  background: #1e1e1e;
+  gap: 0px;
+}
+
+.Front {
+  border: 3px solid #262626;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 10px 0px;
+  width: 600px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.estudos {
+  border: 3px solid #262626;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0px;
+  width: 800px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sobre {
+  color: #b80c0c;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+
+.textSobre {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  margin: 10px 20px;
+}
+
+@media (max-width: 850px) {
+  .estudos {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .textSobre {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 15px;
+  }
+  .estudos,
+  .Front {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .estudos,
+  .Front {
+    width: 300px;
+  }
+}
