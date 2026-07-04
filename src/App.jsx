@@ -7,7 +7,7 @@ function App() {
   return (
     <section className="section">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
 
         <Route path="/curso/:nome" element={<Certificados />} />
       </Routes>
