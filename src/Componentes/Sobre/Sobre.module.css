@@ -1,14 +1,13 @@
 .containerSobre {
   display: grid;
-  grid-template-columns: 1fr;
-  /* align-items: center; */
+  grid-template-columns: max;
   justify-items: center;
   margin-top: 50px;
   margin: 0;
   margin-top: 40px;
   padding: 40px 0;
   width: 100%;
-  background: #1e1e1e;
+  background: #0c0c0c;
   gap: 0px;
 }
 
@@ -16,62 +15,131 @@
   border: 3px solid #262626;
   display: grid;
   align-items: center;
-  justify-items: center;
+  align-content: start;
   text-align: center;
-  padding: 10px 0px;
-  width: 600px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  padding: 30px 30px;
+  width: 500px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.sobreInfos {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+  gap: 10px;
 }
 
 .estudos {
   border: 3px solid #262626;
   display: grid;
   align-items: center;
-  justify-items: center;
   text-align: center;
-  margin-top: 30px;
-  padding: 10px 0px;
-  width: 800px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding: 20px 20px;
+  width: 55ch;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.estudosContainers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  gap: 30px;
+}
+
+.estudos img {
+  width: 20px;
+  margin-right: 20px;
+}
+.estudos a {
+  display: flex;
+  justify-items: center;
 }
 
 .sobre {
-  color: #b80c0c;
+  color: #a01111;
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: start;
 }
 
 .textSobre {
-  color: white;
+  color: rgb(189, 189, 189);
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
-  margin: 10px 20px;
+  margin: 0px;
+  text-align: start;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1090px) {
   .estudos {
-    width: 600px;
+    width: 40ch;
+  }
+  .Front {
+    width: 400px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 880px) {
   .textSobre {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
-    margin: 10px 15px;
+    font-size: 1.1rem;
+    margin: 0px;
+    text-align: start;
   }
-  .estudos,
+  .estudos a {
+    font-size: 1rem;
+  }
+  .estudos {
+    padding: 20px 20px;
+    width: 30ch;
+    gap: 10px;
+  }
   .Front {
-    width: 450px;
+    padding: 30px 30px;
+    width: 300px;
+  }
+  .estudos img {
+    width: 20px;
+    margin-right: 10px;
   }
 }
 
-@media (max-width: 500px) {
-  .estudos,
+@media (max-width: 690px) {
+  .estudos {
+    padding: 10px 10px;
+    width: 25ch;
+  }
   .Front {
-    width: 300px;
+    padding: 10px 10px;
+    width: 280px;
+  }
+  .sobre {
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+  }
+  .textSobre {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .estudos a {
+    font-size: 0.8rem;
+  }
+  .estudosContainers {
+    gap: 20px;
+    align-content: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .sobreInfos {
+    grid-template-columns: 1fr;
+  }
+  .estudos {
+    width: 280px;
+  }
+  .estudos a {
+    font-size: 1rem;
   }
 }

@@ -165,11 +165,11 @@ const cursos = [
 
   {
     id: 9,
-    rota: "unifecaf",
+    rota: "faculdade",
 
     cor: "#439b80",
 
-    nome: "Unifecaf",
+    nome: "Faculdade",
 
     icone: unifecaf,
 
@@ -178,7 +178,7 @@ const cursos = [
     descricao:
       "Durante a graduação em Análise e Desenvolvimento de Sistemas na Unifecaf desenvolvo conhecimentos sobre programação, banco de dados, engenharia de software, desenvolvimento web e lógica computacional. Além da parte técnica, também estudo metodologias de desenvolvimento, arquitetura de sistemas e boas práticas utilizadas no mercado de tecnologia.",
 
-    link: "https://www.origamid.com/certificate/f86d2c21",
+    link: "https://drive.google.com/file/d/1KYErrAlBJ220KrOcPkCf39Lp1pqPnnM6/view?usp=sharing",
   },
 ];
 
