@@ -25,7 +25,7 @@ const Sobre = () => {
           <div className={styles.estudos}>
             <h2 className={styles.sobre}>Estudos</h2>
             <p className={styles.textSobre}>
-              <strong>Faculdade:</strong> Analise e Desinvolvimento de sistemas
+              <strong>Faculdade:</strong> Análise e Desenvolvimento de sistemas
               - Unifecaf
             </p>
             <p className={styles.textSobre}>
